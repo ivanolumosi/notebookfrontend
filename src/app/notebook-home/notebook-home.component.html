@@ -1,0 +1,28 @@
+<div class="note-container">
+    <h1>Notebook</h1>
+  
+    <div class="note-form">
+      <h2>Add Note</h2>
+      <input [(ngModel)]="newNote.title" placeholder="Title" />
+      <textarea [(ngModel)]="newNote.content" placeholder="Content"></textarea>
+      <button (click)="addNote()">Add Note</button>
+    </div>
+  
+    <div class="note-form" *ngIf="editingNote">
+      <h2>Edit Note</h2>
+      <input [(ngModel)]="editingNote.title" placeholder="Title" />
+      <textarea [(ngModel)]="editingNote.content" placeholder="Content"></textarea>
+      <button (click)="updateNote()">Update Note</button>
+    </div>
+  
+    <div class="note-list">
+      <h2>Notes</h2>
+      <div *ngFor="let note of notes" class="note">
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.content }}</p>
+        <button (click)="editNote(note)">Edit</button>
+        <button (click)="deleteNote(note.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+  

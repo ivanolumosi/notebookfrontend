@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(52, 45, 82);
+   
+}
+.note-container {
+    background-color: rgb(39, 32, 72);
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px red;
+    color: aliceblue;
+  }
+  
+  .note-form {
+    margin-bottom: 20px;
+  }
+  .note-form input{
+    background-color: rgb(218, 187, 250)
+  }
+  .note-form textarea{
+    background-color:rgb(215, 248, 242) ;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    background-color: ;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .note-form button {
+    padding: 10px 20px;
+    background-color:rgb(234, 55, 87) ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50px;
+    
+  }
+  
+  
+  .note-form button:hover {
+    background-color: green;
+  }
+  
+  .note-list {
+    margin-top: 20px;
+  }
+  
+  .note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .note h3 {
+    margin: 0 0 10px 0;
+    
+  }
+  
+  .note button {
+    margin-right: 10px;
+    background-color: rgb(234, 55, 87);
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color: aliceblue;
+  }
+  
