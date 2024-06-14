@@ -21,6 +21,7 @@ body{
   }
   .note-form textarea{
     background-color:rgb(215, 248, 242) ;
+    height: 300px;
   }
   
   .note-form input,
