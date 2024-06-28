@@ -1,3 +1,4 @@
+<div class="wrapper">
 <div class="note-container">
     <h1>Notebook</h1>
   
@@ -18,11 +19,11 @@
     <div class="note-list">
       <h2>Notes</h2>
       <div *ngFor="let note of notes" class="note">
-        <h3>{{ note.title }}</h3>
+        <h3>{{ note.title | reverseTitle }}</h3>
         <p>{{ note.content }}</p>
         <button (click)="editNote(note)">Edit</button>
         <button (click)="deleteNote(note.id)">Delete</button>
       </div>
     </div>
   </div>
-  
+</div>

@@ -3,6 +3,7 @@ import { NotesService } from '../notebook-home/notes.services';
 import { Note } from './note.model';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReverseTitlePipe } from '../reverse-title.pipe';
 
 
 
@@ -10,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-notebook-home',
   standalone: true,
   imports: [ CommonModule,
-    FormsModule],
+    FormsModule,ReverseTitlePipe],
   templateUrl: './notebook-home.component.html',
   styleUrls: ['./notebook-home.component.css']
 })
